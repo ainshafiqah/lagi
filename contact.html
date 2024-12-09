@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lado Group</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f4ec;
+            color: #333;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #6d4c41;
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f4ec;
+            border: 3px solid #d7a661;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8em;
+            color: #6d4c41;
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .contact-info ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #d7a661;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #795548;
+        }
+
+        /* Hover Effect */
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Map Container */
+        .map-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        /* Footer Styling */
+        footer .social-media-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer .social-media-links a img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-media-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        footer p {
+            text-align: center;
+            color: #fff;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="traditional-header" style="background-image: url('bgg.jpg');">
+        <div class="logo-container">
+            <img src="ladoLogo.png" alt="Logo" class="logo-img">
+            <div class="company-info">
+                <h1>Lado Group</h1>
+                <p class="tagline">Traditional Malay Cuisine</p>
+            </div>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#reservation-takeaway">Reservation</a></li>
+                <li><a href="#reservation-takeaway">Pick Up & Delivery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-info">
+            <h3>Our Address</h3>
+            <ul>
+                <li>Lot 5.29.00 & E5.29.00, Level 5</li>
+                <li>Pavilion Damansara Height</li>
+                <li>Jalan Damanlela, Pusat Bandar Damansara</li>
+                <li>50490 Kuala Lumpur</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3>Reach Us</h3>
+            <ul>
+                <li>Phone: <a href="tel:+60193844332">+60193844332</a></li>
+                <li>Email: <a href="mailto:enquiry@ladogroup.my">enquiry@ladogroup.my</a></li>
+            </ul>
+        </div>
+
+        <!-- Google Maps Integration -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.440937398314!2d101.62445731563246!3d3.1415313504056026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc491a40a9837f%3A0x4e4cf077b39d6b6e!2sPavilion%20Damansara%20Heights!5e0!3m2!1sen!2smy!4v1685575782349!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="traditional-footer">
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/ladomalaysia?igsh=YWdyZmhhaHo0aXQ3" target="_blank">
+                <img src="ig.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61553851080694&mibextid=LQQJ4d&rdid=0itVXp0DFLVxC5PM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Dc1yTWvzp%2F%3Fmibextid%3DLQQJ4d" target="_blank">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@lado.malaysia?_t=8rtongXbJWU&_r=1" target="_blank">
+                <img src="tt.png" alt="TikTok">
+            </a>
+        </div>
+        <p>&copy; 2024 Lado Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

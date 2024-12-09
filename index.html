@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Lado Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="traditional-header" style="background-image: url('bgg.jpg');">
+        <div class="logo-container">
+            <img src="ladoLogo.png" alt="Logo" class="logo-img">
+            <div class="company-info">
+                <h1>Lado Group</h1>
+                <p class="tagline">Traditional Malay Cuisine</p>
+            </div>
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#reservation-takeaway">Reservation</a></li>
+                <li><a href="#reservation-takeaway">Pick Up & Delivery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="promo1.jpg" alt="Promotion 1">
+                <div class="text">Special Raya Promo: Nasi Lemak & Rendang Combo!</div>
+            </div>
+            <div class="slide">
+                <img src="promo2.jpg" alt="Promotion 2">
+                <div class="text">Celebrate Traditions with Our Family Meal Sets</div>
+            </div>
+            <div class="slide">
+                <img src="promo3.jpg" alt="Promotion 3">
+                <div class="text">Explore Our Special Menu for the Festive Season</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation and Takeaway Section -->
+    <section id="reservation-takeaway">
+        <div class="reservation-takeaway-container">
+            <div class="reservation" style="background-image: url('reservess.jpg');">
+                <h3>Reserve a Table</h3>
+                <a href="https://app.eats365pos.com/my/en/ladorestaurant/reservation" class="btn">Book Now</a>
+            </div>
+            <div class="takeaway" style="background-image: url('takeaway.jpg');">
+                <h3>Pick up & Delivery</h3>
+                <a href="https://app.eats365pos.com/my/en/ladorestaurant?referrer=https%3A%2F%2Fladogroup.my%2F" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="traditional-footer">
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/ladomalaysia?igsh=YWdyZmhhaHo0aXQ3" target="_blank">
+                <img src="ig.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61553851080694&mibextid=LQQJ4d&rdid=0itVXp0DFLVxC5PM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Dc1yTWvzp%2F%3Fmibextid%3DLQQJ4d" target="_blank">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@lado.malaysia?_t=8rtongXbJWU&_r=1" target="_blank">
+                <img src="tt.png" alt="TikTok">
+            </a>
+        </div>
+        <p>&copy; 2024 Lado Group. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.classList.remove('active'));
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
